@@ -21,6 +21,10 @@ class LibqrencodeConan(ConanFile):
         "libiconv/1.15@bincrafters/stable", 
         "libpng/1.6.34@bincrafters/stable"
     )
+    
+    def config_options(self):
+        if self.settings.os == 'Windows':
+            del self.options.fPIC
 
     def source(self):
         source_url = "https://github.com/fukuchi/libqrencode"
