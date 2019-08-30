@@ -9,8 +9,11 @@ class LibqrencodeConan(ConanFile):
     name = "libqrencode"
     version = "4.0.0"
     url = "https://github.com/bincrafters/conan-libqrencode"
+    homepage = "https://github.com/fukuchi/libqrencode"
     description = "A fast and compact QR Code encoding library"
-    license = "LGPL-2.1, LGPL-3.0"
+    topics = ("conan", "libqrencode")
+    author = "Bincrafters <bincrafters@gmail.com>"
+    license = ("LGPL-2.1, LGPL-3.0")
     exports = ["LICENSE.md"]
     exports_sources = ["CMakeLists.txt", "sources.patch"]
     generators = "cmake"
@@ -19,7 +22,7 @@ class LibqrencodeConan(ConanFile):
     default_options = {'shared': False, 'fPIC': True}
     requires = (
         "libiconv/1.15@bincrafters/stable", 
-        "libpng/1.6.34@bincrafters/stable"
+        "libpng/1.6.37@bincrafters/stable"
     )
     
     def config_options(self):
@@ -27,8 +30,7 @@ class LibqrencodeConan(ConanFile):
             del self.options.fPIC
 
     def source(self):
-        source_url = "https://github.com/fukuchi/libqrencode"
-        tools.get("{0}/archive/v{1}.tar.gz".format(source_url, self.version))
+        tools.get("{0}/archive/v{1}.tar.gz".format(self.homepage, self.version))
         extracted_dir = self.name + "-" + self.version
         tools.patch(base_path=extracted_dir, patch_file="sources.patch")
         #Rename to "sources" is a convention to simplify later steps
