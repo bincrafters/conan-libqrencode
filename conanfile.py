@@ -16,7 +16,7 @@ class LibqrencodeConan(ConanFile):
     generators = "cmake"
     settings = "os", "arch", "compiler", "build_type"
     options = {"shared": [True, False], "fPIC": [True, False]}
-    default_options = "shared=False", "fPIC=True"
+    default_options = {'shared': False, 'fPIC': True}
     requires = (
         "libiconv/1.15@bincrafters/stable", 
         "libpng/1.6.34@bincrafters/stable"

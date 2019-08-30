@@ -2,7 +2,7 @@
 
 | Bintray | Appveyor | Travis | 
 |---------|-----------|--------|
-|[![Download](https://api.bintray.com/packages/bincrafters/public-conan/libqrencode%3Abincrafters/images/download.svg)](https://bintray.com/bincrafters/public-conan/libqrencode%3Abincrafters/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/nmmc71t5do6ft58s?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-libqrencode)|[![Build Status](https://travis-ci.org/bincrafters/conan-libqrencode.svg?branch=stable%2F4.0.0)](https://travis-ci.org/bincrafters/conan-libqrencode)|
+|[![Download](https://api.bintray.com/packages/bincrafters/public-conan/libqrencode%3Abincrafters/images/download.svg)](https://bintray.com/bincrafters/public-conan/libqrencode%3Abincrafters/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/nmmc71t5do6ft58s?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-libqrencode)|[![Build Status](https://travis-ci.com/bincrafters/conan-libqrencode.svg?branch=stable%2F4.0.0)](https://travis-ci.com/bincrafters/conan-libqrencode)|
 
 ## Conan.io Information
 
