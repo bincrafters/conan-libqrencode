@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 from conans import ConanFile, CMake, tools
 import os
 
@@ -21,8 +18,8 @@ class LibqrencodeConan(ConanFile):
     options = {"shared": [True, False], "fPIC": [True, False]}
     default_options = {'shared': False, 'fPIC': True}
     requires = (
-        "libiconv/1.15@bincrafters/stable", 
-        "libpng/1.6.37@bincrafters/stable"
+        "libiconv/1.15", 
+        "libpng/1.6.37"
     )
     
     def config_options(self):
