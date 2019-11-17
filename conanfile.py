@@ -9,7 +9,6 @@ class LibqrencodeConan(ConanFile):
     homepage = "https://github.com/fukuchi/libqrencode"
     description = "A fast and compact QR Code encoding library"
     topics = ("conan", "libqrencode")
-    author = "Bincrafters <bincrafters@gmail.com>"
     license = ("LGPL-2.1, LGPL-3.0")
     exports = ["LICENSE.md"]
     exports_sources = ["CMakeLists.txt", "sources.patch"]
